@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdfaf0;
+  --foreground: #1e293b;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #eff6ff 0%, #fffdf5 48%, #f8fafc 100%);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+}
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.hero-word-blue {
+  color: #0d61d8;
+}
+
+.hero-word-orange {
+  color: #dd6b1f;
+}
+
+.hero-word-green {
+  color: #1f7a3f;
+}
+
+.section-shell {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
