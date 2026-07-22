@@ -5,7 +5,7 @@ export function Footer() {
     <footer>
       <div className="relative">
         <Image
-          src="/Footer image.png"
+          src="/footer image.png"
           alt="Jauhar Scouts Footer"
           width={1440}
           height={800}
@@ -109,9 +109,9 @@ export function Footer() {
 
         {/* FIND A GROUP Button Overlay */}
         <div className="absolute top-[60%] left-4 md:top-[68%] md:left-20">
-          <button className="bg-orange-600 text-white px-6 py-3 md:px-12 md:py-4 rounded-full font-bold text-sm md:text-lg shadow-md hover:bg-orange-700 transition flex items-center gap-2 md:gap-3">
+          <a href="#" className="inline-block bg-orange-600 text-white px-6 py-3 md:px-12 md:py-4 rounded-full font-bold text-sm md:text-lg shadow-md hover:bg-orange-700 transition flex items-center gap-2 md:gap-3 cursor-pointer">
              FIND A GROUP →
-          </button>
+          </a>
         </div>
 
         {/* Search and View Map Overlay */}
@@ -123,26 +123,26 @@ export function Footer() {
               placeholder="Enter city or district..."
               className="px-4 py-2 text-gray-700 focus:outline-none rounded"
             />
-            <button className="bg-green-700 text-white p-2 rounded hover:bg-green-800 transition-colors">
+            <button className="bg-green-700 text-white p-2 rounded hover:bg-green-800 transition-colors cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
           </div>
           {/* VIEW MAP Button */}
-          <button className="bg-blue-900 text-white px-12 py-3 rounded-lg font-bold text-lg border-2 border-white hover:bg-blue-950 transition-colors">
+          <a href="#" className="inline-block bg-blue-900 text-white px-12 py-3 rounded-lg font-bold text-lg border-2 border-white hover:bg-blue-950 transition-colors cursor-pointer">
             VIEW MAP
-          </button>
+          </a>
         </div>
 
         {/* VIEW YOUR JOURNEY Button */}
         <div className="hidden md:flex absolute top-[30%] left-[05%]">
-          <button className="bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg border-2 border-yellow-400 hover:bg-blue-800 transition flex items-center gap-2">
+          <a href="#" className="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg border-2 border-yellow-400 hover:bg-blue-800 transition flex items-center gap-2 cursor-pointer">
             VIEW YOUR JOURNEY
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </button>
+          </a>
         </div>
 
         {/* Powered by BRDigitech attribution */}
