@@ -150,7 +150,7 @@ export const journeyItems = [
   { count: "36", label: "Camping Nights", emoji: "⛺" },
   { count: "125", label: "Hiking Kilometres", emoji: "🏔️" },
   { count: "58", label: "Service Hours", emoji: "❤️" },
-  { count: "23", label: "Badges Earned", emoji: "🌟" },
+  { count: "23", label: "Badges Earned", emoji: "🎖️" },
   { count: "4", label: "Awards Received", emoji: "🏆" },
 ] as const;
 
