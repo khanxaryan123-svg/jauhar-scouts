@@ -18,17 +18,17 @@ export function HeroSection() {
       <Navbar />
       
       {/* Buttons Overlay */}
-      <div className="absolute top-[66%] left-[10%] flex flex-col sm:flex-row gap-3 pointer-events-auto">
-        <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-bold text-sm shadow-lg hover:bg-blue-700 transition">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 sm:top-[66%] sm:left-[10%] sm:translate-x-0 flex flex-col sm:flex-row gap-3 pointer-events-auto">
+        <a href="#" className="flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-blue-600 text-white font-bold text-xs sm:text-sm shadow-lg hover:bg-blue-700 transition cursor-pointer">
           JOIN THE ADVENTURE
           <span className="text-yellow-400 text-base font-bold">→</span>
-        </button>
-        <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white text-slate-800 font-bold text-sm shadow-lg border-2 border-slate-700 hover:bg-slate-50 transition">
+        </a>
+        <a href="#" className="flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-white text-slate-800 font-bold text-xs sm:text-sm shadow-lg border-2 border-slate-700 hover:bg-slate-50 transition cursor-pointer">
           DISCOVER SCOUTING
           <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
-        </button>
+        </a>
       </div>
     </section>
   );
