@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function AboutLeadership() {
   return (
     <section className="py-16 px-6" style={{backgroundColor: "#F2EFE9"}}>
@@ -16,9 +18,13 @@ export function AboutLeadership() {
           </div>
           <div className="flex-1">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <div className="bg-gradient-to-br from-green-100 to-blue-100 h-96 flex items-center justify-center text-9xl">
-                🏛️
-              </div>
+              <Image
+                src="/leadership about image.png"
+                alt="About Leadership"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>

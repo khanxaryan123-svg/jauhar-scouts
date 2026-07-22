@@ -3,9 +3,9 @@ import { Navbar } from "./Navbar";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full pt-52">
+    <section className="relative w-full">
       <Image
-        src="/ChatGPT Image Jul 20, 2026, 03_43_07 PM.png"
+        src="/ChatGPT Image Jul 21, 2026, 07_55_33 PM.png"
         alt="Jauhar Scouts hero section"
         width={1440}
         height={1000}
@@ -18,7 +18,7 @@ export function HeroSection() {
       <Navbar />
       
       {/* Buttons Overlay */}
-      <div className="absolute top-[55%] left-[8%] flex flex-col sm:flex-row gap-3 pointer-events-auto">
+      <div className="absolute top-[66%] left-[10%] flex flex-col sm:flex-row gap-3 pointer-events-auto">
         <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-bold text-sm shadow-lg hover:bg-blue-700 transition">
           JOIN THE ADVENTURE
           <span className="text-yellow-400 text-base font-bold">→</span>

@@ -1,103 +1,151 @@
-import { Search } from "lucide-react";
-import { footerLinkGroups } from "@/lib/home-data";
+import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="relative">
-      {/* Find a Scout Group Banner */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 py-6">
-        <div className="section-shell">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="text-center md:text-left">
-                <h3 className="text-white font-bold text-lg md:text-xl">FIND A SCOUT GROUP NEAR YOU!</h3>
-                <p className="text-blue-100 text-sm">Connect with scouts in your area and begin your adventure today.</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 w-full md:w-auto">
-              <div className="relative flex-1 md:w-80">
-                <input
-                  type="text"
-                  placeholder="Enter city or district..."
-                  className="w-full px-4 py-3 rounded-l-lg border-0 focus:ring-2 focus:ring-yellow-400"
-                />
-                <button className="absolute right-0 top-0 bottom-0 bg-gradient-to-b from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-4 rounded-r-lg transition-all duration-200 shadow-[0_4px_0_0_#166534] hover:shadow-[0_2px_0_0_#166534] hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5">
-                  <Search size={20} />
-                </button>
-              </div>
-              <button className="bg-gradient-to-b from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-blue-900 font-bold px-6 py-3 rounded-lg transition-all duration-200 shadow-[0_4px_0_0_#92400e] hover:shadow-[0_2px_0_0_#92400e] hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 whitespace-nowrap">
-                VIEW MAP
-              </button>
-            </div>
+    <footer>
+      <div className="relative">
+        <Image
+          src="/Footer image.png"
+          alt="Jauhar Scouts Footer"
+          width={1440}
+          height={800}
+          className="w-full h-auto"
+          priority
+        />
+        
+        {/* Logo and Social Media Overlay */}
+        <div className="absolute bottom-20 left-10 flex items-center gap-4">
+          <Image
+            src="/JS logo With Simple name.png"
+            alt="Jauhar Scouts Logo"
+            width={60}
+            height={60}
+            className="h-auto"
+          />
+          <div className="flex items-center gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/facebook icon.png"
+                alt="Facebook"
+                width={30}
+                height={30}
+                className="h-auto hover:scale-110 transition-transform"
+              />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/Instagram icon.png"
+                alt="Instagram"
+                width={30}
+                height={30}
+                className="h-auto hover:scale-110 transition-transform"
+              />
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/X.png"
+                alt="X"
+                width={30}
+                height={30}
+                className="h-auto hover:scale-110 transition-transform"
+              />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/Youtube icon.png"
+                alt="YouTube"
+                width={30}
+                height={30}
+                className="h-auto hover:scale-110 transition-transform"
+              />
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/Tiktok icon.png"
+                alt="TikTok"
+                width={30}
+                height={30}
+                className="h-auto hover:scale-110 transition-transform"
+              />
+            </a>
           </div>
         </div>
-      </div>
 
-      {/* Main Footer */}
-      <div className="bg-gradient-to-b from-slate-800 to-slate-900 pt-8 pb-4 text-white">
-        <div className="relative -top-8">
-          <svg viewBox="0 0 1440 100" className="w-full fill-current text-slate-800">
-            <path d="M0,50 C300,0 600,100 900,50 C1200,0 1440,100 1440,100 L1440,0 L0,0 Z" />
-          </svg>
+        {/* DISCOVER SCOUTING Submenu */}
+        <div className="absolute bottom-24 left-[24%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">About Us</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Membership</a>
         </div>
 
-        <div className="section-shell relative z-10">
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-            {/* Left Side: Brand & Social */}
-            <div className="flex flex-col items-start gap-6">
-              <div className="flex items-center gap-3">
-                <div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-blue-900 font-bold px-4 py-2 rounded-lg shadow-lg">
-                  FIND A GROUP →
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📘
-                </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  𝕏
-                </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📷
-                </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📺
-                </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  💼
-                </a>
-              </div>
-            </div>
+        {/* PROGRAMMES & SKILLS Submenu */}
+        <div className="absolute bottom-24 left-[36%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Event Calendar</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Activities</a>
+        </div>
 
-            {/* Middle: Link Groups */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {footerLinkGroups.map((group, idx) => (
-                <div key={idx} className="flex flex-col gap-2">
-                  <h4 className="text-xs font-bold text-yellow-300 uppercase tracking-wider">{group.title}</h4>
-                  {group.links.map((link, linkIdx) => (
-                    <a
-                      key={linkIdx}
-                      href="#"
-                      className="text-sm text-white hover:text-yellow-300 transition"
-                    >
-                      {link}
-                    </a>
-                  ))}
-                </div>
-              ))}
-            </div>
+        {/* SCOUT LIFE Submenu */}
+        <div className="absolute bottom-24 left-[46%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Nestle Hub</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Community Hub</a>
+        </div>
 
-            {/* Right Side: World Scouting */}
-            <div className="flex items-center gap-3">
-              <span className="text-xs font-medium text-white whitespace-nowrap">A Member of World Scouting</span>
-              <div className="flex items-center gap-2">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-yellow-400 bg-purple-800 text-2xl">
-                  ⚜️
-                </div>
-              </div>
-            </div>
+        {/* AI SCOUT HUB Submenu */}
+        <div className="absolute bottom-24 left-[54%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">AI Scout Mentor</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Smart Planners</a>
+        </div>
+
+        {/* SCOUT JOURNEY Submenu */}
+        <div className="absolute bottom-24 left-[64%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">My Journey</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Achievements</a>
+        </div>
+
+        {/* CONTACT US Submenu */}
+        <div className="absolute bottom-24 left-[73%] text-white flex flex-col gap-1.5">
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Info 31 Elliott</a>
+          <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Mon–Pursat BM</a>
+        </div>
+
+        {/* FIND A GROUP Button Overlay */}
+        <div className="absolute top-[68%] left-20">
+          <button className="bg-orange-600 text-white px-12 py-4 rounded-full font-bold text-lg shadow-md hover:bg-orange-700 transition flex items-center gap-3">
+             FIND A GROUP →
+          </button>
+        </div>
+
+        {/* Search and View Map Overlay */}
+        <div className="absolute top-[50%] left-[76%] transform -translate-x-1/2 flex flex-col items-center gap-16">
+          {/* Search Input Row */}
+          <div className="flex items-center gap-2 bg-white rounded-lg p-1 shadow-lg">
+            <input
+              type="text"
+              placeholder="Enter city or district..."
+              className="px-4 py-2 text-gray-700 focus:outline-none rounded"
+            />
+            <button className="bg-green-700 text-white p-2 rounded hover:bg-green-800 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
           </div>
+          {/* VIEW MAP Button */}
+          <button className="bg-blue-900 text-white px-12 py-3 rounded-lg font-bold text-lg border-2 border-white hover:bg-blue-950 transition-colors">
+            VIEW MAP
+          </button>
         </div>
+
+        {/* VIEW YOUR JOURNEY Button */}
+        <div className="absolute top-[30%] left-[05%]">
+          <button className="bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg border-2 border-yellow-400 hover:bg-blue-800 transition flex items-center gap-2">
+            VIEW YOUR JOURNEY
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+
       </div>
     </footer>
   );

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Footer } from "@/components/home/Footer";
 import { HeroSection } from "@/components/home/HeroSection";
-import { JourneySection } from "@/components/home/JourneySection";
 import { Navbar } from "@/components/home/Navbar";
 import { NewsAiSection } from "@/components/home/NewsAiSection";
 import { ProgrammesSection } from "@/components/home/ProgrammesSection";
@@ -12,7 +11,6 @@ export function HomePage() {
       <HeroSection />
       <ProgrammesSection />
       <NewsAiSection />
-      <JourneySection />
       <Footer />
     </main>
   );

@@ -86,6 +86,7 @@ export const programmes = [
     headerColor: "#4A90E2",
     hasBadge: false,
     link: "/adventure",
+    image: "/adventure profile.png",
   },
   {
     title: "Skills for Life",
@@ -95,6 +96,7 @@ export const programmes = [
     headerColor: "#F5A623",
     hasBadge: false,
     link: "/skills-for-life",
+    image: "/skills for life profile.png",
   },
   {
     title: "Leadership",
@@ -104,6 +106,7 @@ export const programmes = [
     headerColor: "#50C878",
     hasBadge: false,
     link: "/leadership",
+    image: "/leadership profile.png",
   },
   {
     title: "Community Service",
@@ -113,6 +116,7 @@ export const programmes = [
     headerColor: "#7B68EE",
     hasBadge: false,
     link: "/community-service",
+    image: "/community service profile.png",
   },
   {
     title: "Global Scouting",
@@ -122,10 +126,11 @@ export const programmes = [
     headerColor: "#20B2AA",
     hasBadge: true,
     link: "/global-scouting",
+    image: "/global scouting profile.png",
   },
 ] as const;
 
-export const newsItems = [
+export const newsItems: NewsItem[] = [
   { tag: "NATIONAL", title: "National Jamboree Pakistan 2025", date: "Thursday, July 25, 2025", description: "Thousands of scouts from across Pakistan came together for an unforgettable jamboree.", emoji: "🏕️", headerColor: "#4CAF50", image: "/national jambooree.png" },
   { tag: "WORLD", title: "World Scout Day Celebrations", date: "Sunday, May 25, 2025", description: "Scouts around the world celebrated the 118th World Scout Day with pride and unity.", emoji: "🌍", headerColor: "#2196F3", image: "/world scout day.png" },
   { tag: "EVENT", title: "Leadership Training Workshop", date: "Monday, May 20, 2025", description: "Building tomorrow's leaders through hands-on training and mentorship.", emoji: "🎖️", headerColor: "#FF9800", image: "/leadership training.png" },
@@ -138,7 +143,7 @@ export const newsItems = [
     headerColor: "#E91E63",
     image: "/asia-pacific.png",
   },
-] as const;
+];
 
 export const journeyItems = [
   { count: "2", label: "Years in Scouting", emoji: "🌲" },
@@ -161,6 +166,16 @@ export const footerLinks = [
 export interface FooterLinkGroup {
   title: string;
   links: string[];
+}
+
+export interface NewsItem {
+  tag: string;
+  title: string;
+  date: string;
+  description: string;
+  emoji: string;
+  headerColor: string;
+  image: string;
 }
 
 export const footerLinkGroups: FooterLinkGroup[] = [

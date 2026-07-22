@@ -62,7 +62,7 @@ export function NewsAiSection() {
           </div>
 
           {/* AI Scout Hub */}
-          <aside className="lg:w-96">
+          <aside className="lg:w-96 relative">
             <Image
               src="/Js Ai hub.png"
               alt="JS AI Hub"
@@ -71,6 +71,12 @@ export function NewsAiSection() {
               className="w-full h-auto rounded-2xl shadow-xl"
               priority
             />
+            <button className="absolute bottom-6 left-4 bg-white text-purple-700 px-4 py-1 rounded-full font-bold shadow-lg hover:bg-gray-100 transition flex items-center gap-1 whitespace-nowrap text-xs">
+              EXPLORE AI SCOUT HUB
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </button>
           </aside>
         </div>
       </div>

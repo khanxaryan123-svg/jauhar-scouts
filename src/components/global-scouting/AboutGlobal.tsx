@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function AboutGlobal() {
   return (
     <section className="py-16 px-6" style={{backgroundColor: "#F2EFE9"}}>
@@ -14,9 +16,13 @@ export function AboutGlobal() {
           </div>
           <div className="flex-1">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 h-96 flex items-center justify-center text-9xl">
-              🌍
-              </div>
+              <Image
+                src="/global scouting about.png"
+                alt="About Global Scouting"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
