@@ -9,7 +9,8 @@ export function AdventureNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="absolute top-10 left-10 right-10 z-50">
+    <div className="absolute top-6 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
       {/* Bottom row: Logo + Navbar */}
       <div className="flex items-center justify-between gap-8">
         {/* Left: Logo */}
@@ -113,6 +114,7 @@ export function AdventureNavbar() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }
