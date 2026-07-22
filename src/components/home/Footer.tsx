@@ -14,7 +14,7 @@ export function Footer() {
         />
         
         {/* Logo and Social Media Overlay */}
-        <div className="absolute bottom-20 left-10 flex items-center gap-4">
+        <div className="absolute bottom-5 left-4 md:bottom-20 md:left-10 flex flex-col md:flex-row items-center gap-4">
           <Image
             src="/JS logo With Simple name.png"
             alt="Jauhar Scouts Logo"
@@ -22,13 +22,13 @@ export function Footer() {
             height={60}
             className="h-auto"
           />
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/facebook icon.png"
                 alt="Facebook"
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 className="h-auto hover:scale-110 transition-transform"
               />
             </a>
@@ -36,8 +36,8 @@ export function Footer() {
               <Image
                 src="/Instagram icon.png"
                 alt="Instagram"
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 className="h-auto hover:scale-110 transition-transform"
               />
             </a>
@@ -45,8 +45,8 @@ export function Footer() {
               <Image
                 src="/X.png"
                 alt="X"
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 className="h-auto hover:scale-110 transition-transform"
               />
             </a>
@@ -54,8 +54,8 @@ export function Footer() {
               <Image
                 src="/Youtube icon.png"
                 alt="YouTube"
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 className="h-auto hover:scale-110 transition-transform"
               />
             </a>
@@ -63,8 +63,8 @@ export function Footer() {
               <Image
                 src="/Tiktok icon.png"
                 alt="TikTok"
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 className="h-auto hover:scale-110 transition-transform"
               />
             </a>
@@ -72,50 +72,50 @@ export function Footer() {
         </div>
 
         {/* DISCOVER SCOUTING Submenu */}
-        <div className="absolute bottom-24 left-[24%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[24%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">About Us</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Membership</a>
         </div>
 
         {/* PROGRAMMES & SKILLS Submenu */}
-        <div className="absolute bottom-24 left-[36%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[36%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Event Calendar</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Activities</a>
         </div>
 
         {/* SCOUT LIFE Submenu */}
-        <div className="absolute bottom-24 left-[46%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[46%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Nestle Hub</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Community Hub</a>
         </div>
 
         {/* AI SCOUT HUB Submenu */}
-        <div className="absolute bottom-24 left-[54%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[54%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">AI Scout Mentor</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Smart Planners</a>
         </div>
 
         {/* SCOUT JOURNEY Submenu */}
-        <div className="absolute bottom-24 left-[64%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[64%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">My Journey</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Achievements</a>
         </div>
 
         {/* CONTACT US Submenu */}
-        <div className="absolute bottom-24 left-[73%] text-white flex flex-col gap-1.5">
+        <div className="hidden md:flex absolute bottom-24 left-[73%] text-white flex flex-col gap-1.5">
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Info 31 Elliott</a>
           <a href="#" className="text-[13px] font-normal hover:text-orange-400 transition-colors">Mon–Pursat BM</a>
         </div>
 
         {/* FIND A GROUP Button Overlay */}
-        <div className="absolute top-[68%] left-20">
-          <button className="bg-orange-600 text-white px-12 py-4 rounded-full font-bold text-lg shadow-md hover:bg-orange-700 transition flex items-center gap-3">
+        <div className="absolute top-[60%] left-4 md:top-[68%] md:left-20">
+          <button className="bg-orange-600 text-white px-6 py-3 md:px-12 md:py-4 rounded-full font-bold text-sm md:text-lg shadow-md hover:bg-orange-700 transition flex items-center gap-2 md:gap-3">
              FIND A GROUP →
           </button>
         </div>
 
         {/* Search and View Map Overlay */}
-        <div className="absolute top-[50%] left-[76%] transform -translate-x-1/2 flex flex-col items-center gap-16">
+        <div className="hidden md:flex absolute top-[50%] left-[76%] transform -translate-x-1/2 flex flex-col items-center gap-16">
           {/* Search Input Row */}
           <div className="flex items-center gap-2 bg-white rounded-lg p-1 shadow-lg">
             <input
@@ -136,7 +136,7 @@ export function Footer() {
         </div>
 
         {/* VIEW YOUR JOURNEY Button */}
-        <div className="absolute top-[30%] left-[05%]">
+        <div className="hidden md:flex absolute top-[30%] left-[05%]">
           <button className="bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg border-2 border-yellow-400 hover:bg-blue-800 transition flex items-center gap-2">
             VIEW YOUR JOURNEY
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

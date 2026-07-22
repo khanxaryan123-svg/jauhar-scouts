@@ -122,7 +122,7 @@ export function ProgrammesSection() {
           ))}
           {/* Badge for last card, positioned absolutely outside the card */}
           {programmes[programmes.length - 1].hasBadge && (
-            <div className="absolute top-0 right-0 rotate-12 pointer-events-none" style={{ transform: 'translateX(90%) translateY(-25%) rotate(12deg)' }}>
+            <div className="absolute top-0 right-0 rotate-12 pointer-events-none hidden md:block" style={{ transform: 'translateX(90%) translateY(-25%) rotate(12deg)' }}>
               <img
                       src="/be prepared for life.png?v=2"
                       alt="Be Prepared for Life"

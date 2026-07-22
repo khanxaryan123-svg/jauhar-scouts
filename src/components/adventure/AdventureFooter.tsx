@@ -15,20 +15,50 @@ export function AdventureFooter() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📘
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/facebook icon.png?v=1"
+                    alt="Facebook"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  𝕏
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/X.png?v=1"
+                    alt="X"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📷
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/Instagram icon.png?v=1"
+                    alt="Instagram"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  📺
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/Youtube icon.png?v=1"
+                    alt="YouTube"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition text-white">
-                  💼
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/Tiktok icon.png?v=1"
+                    alt="TikTok"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </a>
               </div>
             </div>
