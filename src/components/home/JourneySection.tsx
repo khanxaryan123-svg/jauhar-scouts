@@ -10,9 +10,12 @@ export function JourneySection() {
           <div>
             <h2 className="text-2xl font-black text-green-800 mb-2">YOUR SCOUT JOURNEY</h2>
             <p className="text-slate-700 mb-4">Track, Achieve, Grow.<br/>Your journey, your achievements.</p>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-md hover:bg-blue-700 transition">
+            <a href="#" className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full font-bold text-xs sm:text-sm shadow-md hover:bg-blue-700 transition cursor-pointer">
               VIEW YOUR JOURNEY
-            </button>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
           </div>
           <div className="flex items-center gap-6">
             {journeyItems.map((item) => (
