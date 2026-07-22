@@ -145,6 +145,11 @@ export function Footer() {
           </button>
         </div>
 
+        {/* Powered by BRDigitech attribution */}
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center text-xs text-white/60">
+          Powered by BRDigitech
+        </div>
+
 
       </div>
     </footer>

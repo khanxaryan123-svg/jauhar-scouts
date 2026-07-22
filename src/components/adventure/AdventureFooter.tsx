@@ -91,6 +91,10 @@ export function AdventureFooter() {
               </div>
             </div>
           </div>
+          {/* Powered by BRDigitech attribution */}
+          <div className="mt-8 text-center text-xs text-white/60">
+            Powered by BRDigitech
+          </div>
         </div>
       </div>
     </footer>
