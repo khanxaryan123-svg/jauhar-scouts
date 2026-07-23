@@ -201,6 +201,6 @@ export const footerLinkGroups: FooterLinkGroup[] = [
   },
   {
     title: "CONTACT US",
-    links: ["Info", "Email Us", "United HQ", "Pakistan RN"],
+    links: ["Info 21 Ellistus", "Pune-411045"],
   },
 ] as const;

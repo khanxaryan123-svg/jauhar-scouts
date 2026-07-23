@@ -1,18 +1,8 @@
 import { Search } from "lucide-react";
-
-export function UnitLocatorSection() {
-  return (
-    <div className="relative flex flex-col lg:flex-row items-center gap-8 rounded-2xl p-6 bg-slate-900 text-white">
-      {/* Decorative Leaves */}
-      <div className="absolute left-0 top-0 text-6xl opacity-50">🌿</div>
-      <div className="absolute right-0 bottom-0 text-6xl opacity-50">🌿</div>
-      
-      {/* Left Content */}
-      <div className="flex-1 z-10">
         <h3 className="text-2xl font-bold mb-2">
           <span className="text-orange-500">FIND</span> A SCOUT GROUP
           <br />
-          <span className="text-orange-500">NEAR</span> YOU!
+    <div className="relative flex flex-col lg:flex-row items-center gap-8 rounded-2xl p-6 bg-slate-900 text-white">
         </h3>
         <p className="text-slate-300 mb-4">Connect with scouts in your area<br/>and begin your adventure today.</p>
         <a href="#" className="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-3 rounded-full font-bold text-base shadow-md hover:bg-orange-600 transition cursor-pointer">
