@@ -26,7 +26,7 @@ export function Footer() {
       {/* Footer Background Image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/footer image.png"
+        src="/footer-image.png"
         alt="Jauhar Scouts Footer"
         className="w-full h-auto"
       />
